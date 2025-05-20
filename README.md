@@ -57,7 +57,7 @@ p=list();E=list();xi=list()
 print("X P(X=x) Obs.Fr Exp.Fr xi")
 print("--------------------------")
 for x in range(M+1):
-    p.append(math.exp(-mean)*mean**x/math.factorial(x))
+    p.append(math.exp(-mean)mean*x/math.factorial(x))
     E.append(p[x]*sf)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.3f %4.2f %3.2f %3.2f"%(x,p[x],f[x],E[x],xi[x]))
@@ -73,8 +73,7 @@ else:
 ```
 
 # Output : 
-![image](https://github.com/user-attachments/assets/ea037a1e-ee8b-4b03-a4b0-f56782b13826)
-
+![pqm ex2](https://github.com/user-attachments/assets/10e03dcb-a194-438d-b300-888fcc02f4ec)
 
 # Results
 
